@@ -8,22 +8,38 @@
   color: #444;
 }
 
+body {
+  background-color: #222;
+}
+
 h1, h2, h3, h4, h5 {
   color: black;
 }
 
 #page-wrapper {
-  margin: 15px 50px 0px 50px;
+  background-color: #222;
   text-align: center;
+  height: 100%;
+}
+
+#middle-column {
+  margin: 0px;
+  padding: 1em 2em;
+  display: inline-block;
+  background-color: #f9f9f9;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px #f9f9f9;
 }
 
 a {
   text-decoration: none;
   color: #888;
+  transition: color 0.7s;
 }
 
 a > i {
   color: #888;
+  transition: color 0.7s;
 }
 
 a:hover {
@@ -43,17 +59,18 @@ section {
 }
 
 #portfolio-list > li {
-  background-color: #eaeaea;
+  background-color: #f0f0f0;
+  transition: background-color 0.7s;
   padding: 0.25em;
   margin: 0px auto 1em auto;
-  border: 2px solid #eaeaea;
+  border: 1px solid #f0f0f0;
   border-radius: 1.25em;
   max-width: 500px;
   user-select: none;
 }
 
 #portfolio-list > li:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #f9f9f9;
   cursor: pointer;
 }
 
@@ -62,15 +79,8 @@ section {
 }
 
 header, nav, section, aside, footer {
-  /*
-  border: 1px solid black;
-  */
-  background-color: #f5f5f5;
   padding: 1em;
-}
-
-header, nav, section, aside {
-  margin-bottom: 1em;
+  border-radius: 1em;
 }
 
 aside {
@@ -78,11 +88,11 @@ aside {
   width: 225px;
 }
 
-footer ul {
+#contact-me ul {
   float: left;
   list-style-type: none;
   padding: 0px;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 #contact-me > ul > li {
@@ -92,7 +102,7 @@ footer ul {
 
 footer {
   clear: both;
-  text-align: left;
+  margin-top: 2em;
 }
 
 footer > div:first-of-type {
@@ -100,7 +110,7 @@ footer > div:first-of-type {
 }
 
 #contact-me {
-  float: right;
+  display: inline-block;
 }
 
 .clear-both {
