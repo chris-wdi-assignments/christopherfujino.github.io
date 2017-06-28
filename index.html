@@ -10,6 +10,7 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
@@ -20,26 +21,46 @@
 
 <body>
   <div id="page-wrapper">
-    <nav>
-      <h1>Christopher Fujino</h1>
-    </nav>
-
+    <header>
+      <h1>Christopher Fujino's Portfolio</h1>
+    </header>
+    
     <section>
       <h2>My work</h2>
+      <ul id="portfolio-list">
+        <li data-href="https://www.github.com/christopherfujino/christopherfujino.github.io">
+          <h3>Portfolio</h3>
+          <p>
+            This portfolio, a static website hosted on Github Pages.
+          </p>
+        </li>
+        <li data-href="#">
+          <h3>
+            Dummy project
+          </h3>
+          <p>
+            This text should be replaced by a real description, once I have a
+            second project.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <aside>
-      <h2>Contact me</h2>
-      <ul>
-        <li>christopher.fujino@gmail.com</li>
-        <li><a href="https://www.github.com/christopherfujino">cfujino</a></li>
-        <li><a href="https://www.twitter.com/cfujino">cfujino</a></li>
-        <li>christopher.fujino@gmail.com</li>
-      </ul>
-    </aside>
-
     <footer>
-      <div>The foot</div>
+
+      <div>
+        Source code for this page hosted on Github <a href="https://www.github.com/christopherfujino/christopherfujino.github.io">here</a>.
+      </div>
+      <div id="contact-me">
+        <ul>
+          <li>Contact me</li>
+          <li><a href="mailto:christopher.fujino@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;e-mail</a></li>
+          <li><a href="https://www.twitter.com/cfujino"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;twitter</a></li>
+          <li><a href="https://www.github.com/christopherfujino"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;github</a></li>
+          <li><a href="https://www.linkedin.com/in/christopher-fujino-5a7920123/"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;linkedin</a></li>
+        </ul>
+      </div>
+      <span class="clear-both"></span>
     </footer>
   </div>
 </body>
