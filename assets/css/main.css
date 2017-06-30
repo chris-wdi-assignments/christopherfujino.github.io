@@ -102,15 +102,14 @@ aside {
 }
 
 #contact-me ul {
-  float: left;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
 
-#contact-me > ul > li {
+.social-link {
   float: left;
-  padding: 0.25em;
+  margin: 0px 0.5em 0px 0.5em;
 }
 
 footer {
