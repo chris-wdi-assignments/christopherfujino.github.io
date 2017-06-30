@@ -83,8 +83,8 @@ section {
 .portfolio-item:hover {
   background-color: #f9f9f9;
   cursor: pointer;
-  box-shadow: 0px 0px 15px 1px #444;
-  color: #888;
+  box-shadow: 0px 0px 15px 1px #888;
+  color: #444;
 }
 
 .portfolio-item:last-of-type {
