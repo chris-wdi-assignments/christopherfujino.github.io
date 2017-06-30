@@ -26,6 +26,6 @@ window.onload = function () {
     });
     window.setTimeout(function () { // wait an extra second for each project
       projects[i].classList.remove('hidden');
-    }, 1100 * (i + 1))
+    }, 1000 * (i + 1))
   }
 };
