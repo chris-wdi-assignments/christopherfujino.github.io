@@ -19,9 +19,13 @@ window.onload = function () {
   window.addEventListener('resize', resize);
 
   var projects = document.querySelectorAll('#portfolio-list > li');
-  projects.forEach(function (el) {
-    el.addEventListener('click', function (e) {
+
+  for (let i = 0; i < projects.length; i++) { // use for-loop because we do math w/ i
+    projects[i].addEventListener('click', function (e) {
       window.open(this.getAttribute('data-href'), '_blank');
     });
-  })
+    window.setTimeout(function () { // wait an extra second for each project
+      projects[i].classList.remove('hidden');
+    }, 1100 * (i + 1))
+  }
 };
