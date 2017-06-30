@@ -17,9 +17,8 @@ h1, h2, h3, h4, h5 {
 }
 
 #page-wrapper {
-  background-color: #222;
+  background-color: transparent;
   text-align: center;
-  height: 100%;
 }
 
 #middle-column {
@@ -27,19 +26,18 @@ h1, h2, h3, h4, h5 {
   padding: 1em 2em;
   display: inline-block;
   background-color: #f9f9f9;
-  height: 100%;
   box-shadow: 0px 0px 10px 0px #f9f9f9;
 }
 
 a {
   text-decoration: none;
   color: #888;
-  transition: color 0.7s;
+  transition: color 0.65s;
 }
 
 a > i {
   color: #888;
-  transition: color 0.7s;
+  transition: color 0.65s;
 }
 
 a:hover {
@@ -60,10 +58,9 @@ section {
 
 #portfolio-list > li {
   background-color: #f0f0f0;
-  transition: background-color 0.7s;
+  transition: background-color 0.65s, box-shadow 0.65s;
   padding: 0.25em;
   margin: 0px auto 1em auto;
-  border: 1px solid #f0f0f0;
   border-radius: 1.25em;
   max-width: 500px;
   user-select: none;
@@ -72,6 +69,7 @@ section {
 #portfolio-list > li:hover {
   background-color: #f9f9f9;
   cursor: pointer;
+  box-shadow: 0px 0px 15px 1px #f0f0f0;
 }
 
 #portfolio-list > li:last-of-type {
@@ -101,7 +99,10 @@ aside {
 }
 
 footer {
+  position: fixed;
+  bottom: 1em;
   clear: both;
+  float: bottom;
   margin-top: 2em;
 }
 
